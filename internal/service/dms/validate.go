@@ -53,7 +53,7 @@ func validReplicationSubnetGroupID(v interface{}, k string) (ws []string, es []e
 	if len(val) > 255 {
 		es = append(es, fmt.Errorf("%q must not be longer than 255 characters", k))
 	}
-	if !regexp.MustCompile(`^[a-zA-Z0-9. _-]+$`).MatchString(val) {
+	if !regexp.MustCompile(`^[a-z0-9._-]+$`).MatchString(val) {
 		es = append(es, fmt.Errorf("%q must only contain alphanumeric characters, periods, spaces, underscores and hyphens", k))
 	}
 

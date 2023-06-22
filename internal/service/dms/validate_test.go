@@ -77,8 +77,6 @@ func TestValidReplicationSubnetGroupID(t *testing.T) {
 		"tf-test-replication-subnet-group-1",
 		"tf_test_replication_subnet_group_1",
 		"tf.test.replication.subnet.group.1",
-		"tf test replication subnet group 1",
-		"tfTestReplicationSubnetGroup",
 	}
 
 	for _, s := range validIds {
@@ -92,6 +90,8 @@ func TestValidReplicationSubnetGroupID(t *testing.T) {
 		"default",
 		"tf-test-replication-subnet-group-1!",
 		"tf-test-replication-subnet-group-1tf-test-replication-subnet-group-1tf-test-replication-subnet-group-1tf-test-replication-subnet-group-1tf-test-replication-subnet-group-1tf-test-replication-subnet-group-1tf-test-replication-subnet-group-1tf-test-replication-subnet-group-1",
+		"tfTestReplicationSubnetGroup",
+		"tf test replication subnet group 1",
 	}
 
 	for _, s := range invalidIds {
